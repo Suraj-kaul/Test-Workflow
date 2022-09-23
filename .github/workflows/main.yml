@@ -31,13 +31,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          python one.py
+          python ones.py
       
 
       # - name: Second py file
       #   run: python two.py
   job2:
-    # if: ${{ always() }}
+    if: ${{ always() }}
     needs: job1
     runs-on: ubuntu-latest
     steps:
