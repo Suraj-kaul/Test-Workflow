@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: |
+          run: |
           python one.py
       # - name: Second py file
       #   run: python two.py
