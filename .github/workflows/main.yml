@@ -30,8 +30,17 @@ jobs:
       - name: Run a one-line script
         run: |
           python one.py
-      - name: Second py file
-        run: python two.py
+      # - name: Second py file
+      #   run: python two.py
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - name: Run a second script
+        run: |
+          python two.py
 
       # Runs a set of commands using the runners shell
       # - name: Run a multi-line script
