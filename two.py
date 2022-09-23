@@ -1,4 +1,5 @@
 a = 2
 b = 3
-sum = a+b
+c = 5
+sum = a+b+c
 print(sum)
