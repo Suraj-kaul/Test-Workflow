@@ -10,8 +10,8 @@ on:
   
   workflow_dispatch:
 
-  env:
-    msg: I have changed the trigger
+env:
+  msg: I have changed the trigger
 
   # pull_request:
   #   branches: [ "master" ]
