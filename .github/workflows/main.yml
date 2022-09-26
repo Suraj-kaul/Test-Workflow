@@ -10,6 +10,9 @@ on:
   
   workflow_dispatch:
 
+  env:
+    msg: I have changed the trigger
+
   # pull_request:
   #   branches: [ "master" ]
 
@@ -35,6 +38,8 @@ jobs:
       - name: Run a one-line script
         run: |
           python one.py
+      - name: Trigger message
+        run: echo $msg
       
 
       # - name: Second py file
