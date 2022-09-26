@@ -6,12 +6,12 @@ name: Testing-Workflow
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "prod" ]
+    branches: [ "master" ]
   
   # workflow_dispatch:
 
-# env:
-#   msg: I have changed the trigger
+env:
+  msg: I have changed the trigger
 
   # pull_request:
   #   branches: [ "master" ]
@@ -38,8 +38,8 @@ jobs:
       - name: Run a one-line script
         run: |
           python one.py
-      # - name: Trigger message
-      #   run: echo ${{env.msg}}
+      - name: Trigger message
+        run: echo ${{env.msg}}
       
 
       # - name: Second py file
