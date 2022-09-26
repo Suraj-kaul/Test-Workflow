@@ -8,7 +8,7 @@ on:
   push:
     branches: [ "prod" ]
   
-  workflow_dispatch:
+  # workflow_dispatch:
 
 # env:
 #   msg: I have changed the trigger
