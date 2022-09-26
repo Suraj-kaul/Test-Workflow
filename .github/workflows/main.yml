@@ -39,7 +39,7 @@ jobs:
         run: |
           python one.py
       - name: Trigger message
-        run: echo $msg
+        run: echo env.msg
       
 
       # - name: Second py file
