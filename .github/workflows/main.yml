@@ -36,7 +36,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: python file/one.py
+        run: one.py
       - name: Trigger message
         run: echo $msg
       
