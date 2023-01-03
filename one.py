@@ -1,3 +1,3 @@
 a = ["suraj","kaul"]
-b=a[0]
+b=a[1]
 print(b)
