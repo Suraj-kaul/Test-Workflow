@@ -6,7 +6,7 @@ name: Testing-Workflow
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   
   workflow_dispatch:
 
@@ -42,7 +42,7 @@ jobs:
       
 
       - name: Second py file
-    run: python two.py
+        run: python two.py
   # job2:
   # # #   # if: ${{ always() }}
   #   needs: job1
