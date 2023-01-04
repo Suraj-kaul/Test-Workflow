@@ -22,7 +22,7 @@ env:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  job1:
+  build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -43,19 +43,19 @@ jobs:
 
       # - name: Second py file
       #   run: python two.py
-  # job2:
+  test:
   # #   # if: ${{ always() }}
   # #   # needs: job1
-  #   runs-on: windows-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-python@v4
-  #     - name: Run a second script
-  #       run: |
-  #         python two.py
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - name: Run a second script
+        run: |
+          python two.py
 
-  #     # Runs a set of commands using the runners shell
-  #     - name: Run a multi-line script
-  #       run: |
-  #         echo $msg
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo $msg
          
