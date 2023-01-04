@@ -42,7 +42,7 @@ jobs:
       
 
       - name: Second py file
-        run: python two.py
+    run: python two.py
   # job2:
   # # #   # if: ${{ always() }}
   #   needs: job1
